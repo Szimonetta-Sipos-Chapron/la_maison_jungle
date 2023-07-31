@@ -1,0 +1,35 @@
+.lmj-plant-content {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	width: 85%;
+	position: relative;
+	left: 15%;
+}
+
+.lmj-plant-list {
+	display: flex;
+	flex-wrap: wrap;
+	width:100%;
+	margin:auto;
+	list-style-type: none;
+	row-gap: 20px;
+	position: relative;
+	left: 8%;
+	margin-bottom: 50px;
+}
+
+.lmj-sales {
+	position: absolute;
+	right: 0px;
+	top: 10px;
+	font-weight: 500;
+	color: white;
+	padding: 5px 10px;
+	background-color: #31b572;
+}
+
+.lmj-button-add-to-cart {
+	margin-left: 20px;
+}
+
