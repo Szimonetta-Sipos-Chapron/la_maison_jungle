@@ -2,24 +2,30 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: 15px;
-	width: 85%;
+	width: 60%;
 	position: relative;
-	left: 15%;
+}
+
+.lmj-shopping-list {
+	width: 100%;
 }
 
 .lmj-plant-list {
 	display: flex;
 	flex-wrap: wrap;
-	width:100%;
-	margin:auto;
+	justify-content: flex-start;
 	list-style-type: none;
 	row-gap: 20px;
 	position: relative;
-	left: 8%;
+	left: 10%;
 	margin-bottom: 50px;
 }
 
-.lmj-sales {
+.lmj-button-add-to-cart {
+	margin-left: 20px;
+}
+
+/*.lmj-sales {
 	position: absolute;
 	right: 0px;
 	top: 10px;
@@ -27,9 +33,5 @@
 	color: white;
 	padding: 5px 10px;
 	background-color: #31b572;
-}
-
-.lmj-button-add-to-cart {
-	margin-left: 20px;
-}
+}*/
 

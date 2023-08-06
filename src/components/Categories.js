@@ -3,7 +3,6 @@ import '../styles/Categories.css';
 function Categories({categories, activeCategory, setActiveCategory}) {
 
     return(
-        //<ul className='lmj-plant-list-category'>
         <div className='lmj-categories'>
             <select
                 className='lmj-categories-select'

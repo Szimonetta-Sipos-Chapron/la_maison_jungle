@@ -1,6 +1,7 @@
 .lmj-categories {
-	text-align: center;
-	padding-top: 30px;
+	text-align: start;
+	width: 100%;
+	padding: 30px;
 }
 
 .lmj-categories-select {

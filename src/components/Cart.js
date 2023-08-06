@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import '../styles/Cart.css';
 
 function Cart({cart, setCart}) {
@@ -6,6 +6,17 @@ function Cart({cart, setCart}) {
 	const total = cart.reduce(
 		(acc, plantType) => acc + plantType.amount * plantType.price, 0
 	)
+
+	const isFirstRender = useRef(true);
+
+	useEffect(() => {
+		if (isFirstRender.current) {
+			isFirstRender.current = false;
+			return;
+		}
+		
+		alert(`LMJ: ${total}€ à payer`);
+	}, [total]);
 
 	return isOpen ? (
 		<div className='lmj-cart'>

@@ -34,7 +34,7 @@ function addToCart(name, price) {
                 {plantList.map(({id, cover, name, water, light, price, category}) => 
                     !activeCategory || activeCategory === category ? (
                     <div key={id}>
-                        <PlantItem cover={cover} name={name} water={water} light={light} />
+                        <PlantItem cover={cover} name={name} water={water} light={light} price={price} />
                         <button className='lmj-button-add-to-cart' onClick={() => addToCart(name, price)}>Ajouter</button>
                     </div>
                 ) : null
