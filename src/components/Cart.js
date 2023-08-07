@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import '../styles/Cart.css';
 
 function Cart({cart, setCart}) {
@@ -7,15 +7,10 @@ function Cart({cart, setCart}) {
 		(acc, plantType) => acc + plantType.amount * plantType.price, 0
 	)
 
-	const isFirstRender = useRef(true);
-
 	useEffect(() => {
-		if (isFirstRender.current) {
-			isFirstRender.current = false;
-			return;
+		if (total !== 0) {
+			alert(`LMJ: ${total}€ à payer`);
 		}
-		
-		alert(`LMJ: ${total}€ à payer`);
 	}, [total]);
 
 	return isOpen ? (
